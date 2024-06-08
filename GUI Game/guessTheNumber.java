@@ -50,12 +50,12 @@ public class guessTheNumber extends JFrame implements ActionListener {
         inputValue = new JTextField(20);
         submit = new JButton("Submit");
         submit.setFocusable(false);
-        submit.setBackground(Color.GREEN);
+        submit.setBackground(Color.decode("#7BD100"));
         submit.setForeground(Color.WHITE);
         submit.setBorder(BorderFactory.createEmptyBorder(5,15,5,15));
 
         Restart = new JButton("Restart");
-        Restart.setBackground(Color.decode("#000080"));
+        Restart.setBackground(Color.decode("#0C0080"));
         Restart.setForeground(Color.WHITE);
         Restart.setBorder(BorderFactory.createEmptyBorder(5,15,5,15));
         Restart.setFocusable(false);
@@ -110,13 +110,13 @@ public class guessTheNumber extends JFrame implements ActionListener {
 
         exit = new JButton("EXIT");
         exit.setFocusable(false);
-        exit.setBackground(Color.RED);
+        exit.setBackground(Color.decode("#d15a04"));
         exit.setForeground(Color.white);
         exit.setBorder(BorderFactory.createEmptyBorder(10,30,10,30));
 
         menu = new JButton("Main Menu");
         menu.setFocusable(false);
-        menu.setBackground(Color.decode("#000080"));
+        menu.setBackground(Color.decode("#088fa1"));
         menu.setForeground(Color.white);
         menu.setBorder(BorderFactory.createEmptyBorder(10,20,10,20));
 
