@@ -5,7 +5,7 @@ import javax.swing.border.EtchedBorder;
 
 class TicTacToe {
     int width = 1300;
-    int height = 860;
+    int height = 768;
     JFrame frame = new JFrame();
     JPanel headJPanel = new JPanel();
     JLabel headJLabel = new JLabel();
@@ -49,17 +49,17 @@ class TicTacToe {
             headJLabel.setFont(new Font("Sans Serif", Font.BOLD, 32));
 
             headJPanel.setBackground(Color.BLACK);
-            headJPanel.setPreferredSize(new Dimension(100, 50));
+            headJPanel.setPreferredSize(new Dimension(100, 40));
             headJPanel.add(headJLabel);
 
             frame.add(headJPanel, BorderLayout.NORTH);
             boardPanel.setLayout(null);
 
             gridPanel.setLayout(new GridLayout(3, 3, 10, 10));
-            gridPanel.setBounds(50, 80, 590, 600);
+            gridPanel.setBounds(50, 80, 590, 500);
 
             scorPanel.setLayout(null);
-            scorPanel.setBounds(800, 200, 450, 300);
+            scorPanel.setBounds(800, 100, 450, 300);
             scorPanel.setAlignmentX(JPanel.RIGHT_ALIGNMENT);
             scorPanel.setBorder(BorderFactory.createEtchedBorder());
             scorPanel.setBackground(Color.LIGHT_GRAY);
@@ -90,7 +90,7 @@ class TicTacToe {
             menuButton.setForeground(Color.WHITE);
             menuButton.setFont(new Font("Sans Serif", Font.BOLD, 30));
             menuButton.setBackground(Color.decode("#088fa1"));
-            menuButton.setBounds(940, 700, 180, 60);
+            menuButton.setBounds(940, 600, 180, 60);
             menuButton.setFocusable(false);
             menuButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -105,7 +105,7 @@ class TicTacToe {
             resetButton.setBorder(new EtchedBorder(EtchedBorder.RAISED));
             resetButton.setFont(new Font("Sans Serif", Font.BOLD, 23));
             resetButton.setBackground(Color.decode("#0944db"));
-            resetButton.setBounds(840, 600, 180, 70);
+            resetButton.setBounds(840, 500, 180, 70);
             resetButton.setFocusable(false);
 
             // exit button
@@ -114,8 +114,9 @@ class TicTacToe {
             exitButton.setBackground(Color.decode("#d15a04"));
             exitButton.setBorder(new EtchedBorder(EtchedBorder.RAISED));
             exitButton.setFont(new Font("Sans Serif", Font.BOLD, 23));
+            exitButton.setBounds(1040, 500, 180, 70); 
             exitButton.setFocusable(false);
-            exitButton.setBounds(1040, 600, 180, 70);
+            resetButton.setBounds(840, 500, 180, 70);
 
             for (int r = 0; r < 3; r++) {
                 for (int c = 0; c < 3; c++) {
@@ -163,7 +164,6 @@ class TicTacToe {
                                     board[i][j].setText("");
                                     board[i][j].setForeground(Color.WHITE);
                                     board[i][j].setBackground(Color.DARK_GRAY);
-                                    headJLabel.setText(currentPlayer + "'s turn");
                                     gameOver = false;
                                 }
                             }

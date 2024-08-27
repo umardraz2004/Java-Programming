@@ -51,9 +51,8 @@ public class WelcomeToSmartPlay extends JFrame {
         startSelection.setPreferredSize(new Dimension(60,30));
         startSelection.setBackground(Color.decode("#009879"));
         startSelection.setForeground(Color.WHITE);
-        startSelection.setBorder(BorderFactory.createEmptyBorder(15,5,15,5));
+        startSelection.setBorder(BorderFactory.createEmptyBorder(10,30,10,30));
         startSelection.setAlignmentX(CENTER_ALIGNMENT);
-        startSelection.setFont(new Font("Arial Black",Font.PLAIN,18));
         startSelection.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 dispose();
@@ -69,8 +68,7 @@ public class WelcomeToSmartPlay extends JFrame {
         quickStart.setPreferredSize(new Dimension(125,30));
         quickStart.setBackground(Color.decode("#088fa1"));
         quickStart.setForeground(Color.white);
-        quickStart.setBorder(BorderFactory.createEmptyBorder(15,5,15,5));
-        quickStart.setFont(new Font("Arial Black",Font.PLAIN,18));
+        quickStart.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         quickStart.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Random random = new Random();
@@ -99,8 +97,7 @@ public class WelcomeToSmartPlay extends JFrame {
         help.setPreferredSize(new Dimension(115,30));
         help.setBackground(Color.decode("#0C0080"));
         help.setForeground(Color.WHITE);
-        help.setBorder(BorderFactory.createEmptyBorder(15,10,15,10));
-        help.setFont(new Font("Arial Black",Font.PLAIN,18));
+        help.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         help.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
